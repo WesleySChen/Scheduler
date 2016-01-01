@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :p_times
+  resources :p_dates
+  resources :participants
+  resources :e_times
+  resources :e_dates
+  resources :events
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

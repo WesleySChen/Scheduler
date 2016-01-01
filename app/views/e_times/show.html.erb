@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @e_time.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @e_time.end_time %>
+</p>
+
+<%= link_to 'Edit', edit_e_time_path(@e_time) %> |
+<%= link_to 'Back', e_times_path %>

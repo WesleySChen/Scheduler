@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing E Dates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pos date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @e_dates.each do |e_date| %>
+      <tr>
+        <td><%= e_date.pos_date %></td>
+        <td><%= link_to 'Show', e_date %></td>
+        <td><%= link_to 'Edit', edit_e_date_path(e_date) %></td>
+        <td><%= link_to 'Destroy', e_date, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New E date', new_e_date_path %>

@@ -1,0 +1,21 @@
+<%= form_for(@p_date) do |f| %>
+  <% if @p_date.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@p_date.errors.count, "error") %> prohibited this p_date from being saved:</h2>
+
+      <ul>
+      <% @p_date.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :avail_date %><br>
+    <%= f.date_select :avail_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
