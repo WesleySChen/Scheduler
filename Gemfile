@@ -25,6 +25,32 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'materialize-sass'
 
+# Use a gem for handling pagination
+gem 'will_paginate'
+
+# Use a gem for handling date validation
+gem 'validates_timeliness'
+
+# Use simple_form to clean up form views
+gem 'simple_form'
+
+# Use geocoder to get latitude and longitude data
+gem 'geocoder'
+
+# Use carrierwave to upload instructor photos
+gem 'carrierwave'
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt-ruby', '3.1.5'
+
+gem 'cancancan', '1.7.0'
+
+gem 'nested_form'
+
+gem 'chronic'
+
+gem 'gmaps4rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
