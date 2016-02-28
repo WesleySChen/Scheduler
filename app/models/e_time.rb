@@ -7,5 +7,5 @@ class ETime < ActiveRecord::Base
 	scope :endOrder, -> { order(:end_time)}
 
 	#validations
-	# validate_presence_of :name, :email, :password
+	#validate_presence_of :name, :email, :password
 end
