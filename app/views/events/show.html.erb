@@ -15,5 +15,27 @@
   <%= @event.link %>
 </p>
 
+ <table>
+ 	<tr>
+ 		<th>Date1</th>
+ 		<th>Date2</th>
+ 	</tr>
+ 	<tr>
+ 		<td>Time1</td>
+ 		<td>Time2</td>
+ 	</tr>
+ 	<tr>
+ 		<td>TimeA</td>
+ 		<td>TimeB</td>
+ 	</tr>
+ </table> 
+
+<p>
+	<strong>Participant</strong>
+	<%= @participants %>
+</p>
+
+ <%= link_to 'Add my availability', new_participant_path %>
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
