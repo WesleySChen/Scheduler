@@ -8,5 +8,5 @@ class Event < ActiveRecord::Base
 	scope :alphabetical, -> { order(:title)}
 
 	#validations
-	validates_presence_of :title
+	#validate_presence_of :title
 end

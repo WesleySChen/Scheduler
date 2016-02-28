@@ -8,5 +8,5 @@ class Participant < ActiveRecord::Base
 	scope :alphabetical, -> { order(:name)}
 
 	#validations
-	validates_presence_of :name
+	#validate_presence_of :name
 end
