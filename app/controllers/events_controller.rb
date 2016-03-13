@@ -10,6 +10,7 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+      @event = Event.find(params[:id])
     # @participants = @events.participants
   end
 
@@ -26,7 +27,7 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     @event = Event.new(event_params)
-
+  
     respond_to do |format|
       if @event.save
         @event.link = "http://localhost:3000/events/" + "#{@event.id}"
@@ -72,6 +73,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :description, :link)
+      params.require(:event).permit(:title, :description, :link, :tasks_attributes)
     end
 end

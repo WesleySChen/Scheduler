@@ -1,4 +1,4 @@
-class EDatesController < ApplicationController
+ class EDatesController < ApplicationController
   before_action :set_e_date, only: [:show, :edit, :update, :destroy]
 
   # GET /e_dates
@@ -10,6 +10,7 @@ class EDatesController < ApplicationController
   # GET /e_dates/1
   # GET /e_dates/1.json
   def show
+    @e_date = EDate.find(params[:id])
   end
 
   # GET /e_dates/new
