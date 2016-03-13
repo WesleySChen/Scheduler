@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'materialize-sass'
 
+gem "nested_form"
 # Use a gem for handling pagination
 gem 'will_paginate'
 
